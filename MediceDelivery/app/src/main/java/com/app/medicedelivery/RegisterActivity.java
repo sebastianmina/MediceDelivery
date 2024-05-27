@@ -18,6 +18,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
 
+/**
+ * This class has the activity_delivery view
+ * and the functionality of the buttons.
+ */
 public class RegisterActivity extends AppCompatActivity {
 
     TextView btn;
@@ -45,6 +49,10 @@ public class RegisterActivity extends AppCompatActivity {
                 LoginActivity.class)));
     }
 
+    /**
+     * This class verify the conditions that the inputs
+     * requires.
+     */
     private void checkCredentials() {
 
         String username = inputUsername.getText().toString();
@@ -76,12 +84,21 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This class show an error in an input.
+     * @param input
+     * @param s
+     */
     private void showError(EditText input, String s) {
 
         input.setError(s);
         input.requestFocus();
     }
 
+    /**
+     * This class verify when the registration is successfully done
+     * @param task
+     */
     private void onComplete(Task<AuthResult> task) {
         if (task.isSuccessful()) {
             Toast.makeText(RegisterActivity.this, "Succesfull", Toast.LENGTH_SHORT).show();

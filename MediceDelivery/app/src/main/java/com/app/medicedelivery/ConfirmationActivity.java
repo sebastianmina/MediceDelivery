@@ -6,10 +6,12 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+
+/**
+ * This class has the activity_confirmation view
+ * and the functionality of the buttons.
+ */
 public class ConfirmationActivity extends AppCompatActivity {
     Button btnGoHome;
     @Override

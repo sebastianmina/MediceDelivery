@@ -10,9 +10,6 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +21,10 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+/**
+ * This class has the activity_delivery view
+ * and the functionality of the buttons.
+ */
 public class DeliveryActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -63,6 +64,10 @@ public class DeliveryActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This class has the functionallity to show
+     * all the information in FirebaseFirestore
+     */
     private void EventChangeListener() {
 
         db.collection("deliveries").addSnapshotListener(new EventListener<QuerySnapshot>() {

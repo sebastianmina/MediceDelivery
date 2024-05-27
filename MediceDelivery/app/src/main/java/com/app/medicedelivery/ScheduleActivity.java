@@ -3,7 +3,6 @@ package com.app.medicedelivery;
 import static android.content.ContentValues.TAG;
 
 import android.annotation.SuppressLint;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +24,10 @@ import java.util.Map;
 
 import java.util.UUID;
 
+/**
+ * This class has the activity_delivery view
+ * and the functionality of the buttons.
+ */
 public class ScheduleActivity extends AppCompatActivity {
     Button btnGoBack, btnConfirm, btnSaveInfo;
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -63,6 +66,9 @@ public class ScheduleActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This class saves the information in Firebase Firestore
+     */
     private void saveInfo(){
 
         String name = inputName.getText().toString();
@@ -95,6 +101,10 @@ public class ScheduleActivity extends AppCompatActivity {
                 });
     }
 
+    /**
+     * This class verify the conditions that the inputs
+     * requires.
+     */
     private void checkCredentials() throws InterruptedException {
 
         String name = inputName.getText().toString();
@@ -122,6 +132,11 @@ public class ScheduleActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This class show an error in an input.
+     * @param input
+     * @param s
+     */
     private void showError(EditText input, String s) {
 
         input.setError(s);

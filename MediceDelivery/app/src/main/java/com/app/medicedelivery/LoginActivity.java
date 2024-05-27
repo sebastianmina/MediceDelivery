@@ -22,7 +22,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-
+/**
+ * This class has the activity_delivery view
+ * and the functionality of the buttons.
+ */
 public class LoginActivity extends AppCompatActivity {
 
     TextView btn;
@@ -52,6 +55,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This class verify the conditions that the inputs
+     * requires.
+     */
     private void checkCredentials() {
 
         String email = inputEmail.getText().toString();
@@ -86,6 +93,11 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This class show an error in an input.
+     * @param input
+     * @param s
+     */
     private void showError(EditText input, String s) {
 
         input.setError(s);
