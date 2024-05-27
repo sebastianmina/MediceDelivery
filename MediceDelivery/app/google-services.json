@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "920113145331",
+    "project_id": "medicedelivery-63bdc",
+    "storage_bucket": "medicedelivery-63bdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920113145331:android:55cfd8ce12558cb3ef9e86",
+        "android_client_info": {
+          "package_name": "com.app.medicedelivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSbpE4CyDbx6NgBoqQy2-uFpQAGfuzsqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
